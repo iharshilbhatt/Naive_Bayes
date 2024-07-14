@@ -27,3 +27,44 @@ You can install the required libraries using pip:
 
 ```bash
 pip install numpy pandas scikit-learn matplotlib
+```
+## Usage
+
+Clone the repository or download the project files.
+
+Ensure that the dataset file (naivebayes.csv) is in the same directory as the script.
+
+Run the script:
+
+```bash
+python naive_bayes_classifier.py
+```
+The script will load the dataset, split it into training and testing sets, standardize the features, and train two Naive Bayes classifiers (BernoulliNB and GaussianNB). It will then make predictions on the test set and display the confusion matrices and accuracy scores for both classifiers.
+
+
+## Results
+
+The script will output the following:
+
+- Predictions made by the BernoulliNB and GaussianNB classifiers on the test set.
+- Confusion matrices for both classifiers.
+- Accuracy scores for both classifiers.
+
+Example output:
+
+```lua
+BernoulliNB Predictions: [0 1 1 0 ...]
+Confusion Matrix for BernoulliNB:
+[[13  3]
+ [ 2 12]]
+Accuracy for BernoulliNB: 0.8333
+
+GaussianNB Predictions: [0 1 1 0 ...]
+Confusion Matrix for GaussianNB:
+[[14  2]
+ [ 3 11]]
+Accuracy for GaussianNB: 0.8333
+
+```
+
+This file provides a comprehensive overview of the project, including how to set it up and run it, as well as what to expect from the output.
